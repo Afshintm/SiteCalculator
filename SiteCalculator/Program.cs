@@ -10,7 +10,6 @@ namespace SiteCalculator
         {
             var startup = new Startup();
             var service = startup.Provider.GetRequiredService<InputDataProvider>();
-            service.DoSomething();
             Console.ReadLine();
         }
     }
