@@ -1,4 +1,6 @@
 ﻿using System;
+using Microsoft.Extensions.DependencyInjection;
+using SiteCalculator.Services;
 
 namespace SiteCalculator
 {
@@ -6,7 +8,10 @@ namespace SiteCalculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var startup = new Startup();
+            var service = startup.Provider.GetRequiredService<InputDataProvider>();
+            service.DoSomething();
+            Console.ReadLine();
         }
     }
 }
