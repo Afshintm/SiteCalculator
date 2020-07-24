@@ -22,7 +22,6 @@ You will have to install .net core 3.1 runtime which can be downloaded from
 
 ## To build run and test the project you need to to the following: ##
 
-## Windows mac os or any command line/terminal ##
 
 1- clone the repo to your local environment and cd to repository directory
 
@@ -34,9 +33,13 @@ You will have to install .net core 3.1 runtime which can be downloaded from
 
 ## Run Project ##
 4- dotnet run --project SiteCalculator/SiteCalculator.csproj
+
+
 You can also run the SiteCalculator and pass a json file including an array of site configuration json object 
 
 Alternatively, open SiteCalculator.Api.sln using visual studio 2019 or Intelij Rider then Build and run it.
+
+
 5- dotnet run --project SiteCalculator/SiteCalculator.csproj <JsonFullPathFileName>
 
 
