@@ -29,6 +29,7 @@ namespace SiteCalculator
             var services = new ServiceCollection();
             services.AddSingleton<IConfiguration>(_configuration);
             services.AddSingleton<InputDataProvider>();
+            services.AddTransient<SiteCalculatorService>();
             _provider = services.BuildServiceProvider();
         }
     }
